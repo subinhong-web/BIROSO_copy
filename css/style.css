@@ -1,3 +1,5 @@
+/* 폰트 */
+
 @font-face {
     font-family: 'MaruBuri';
     src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.eot);
@@ -9,39 +11,45 @@
     src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.0/116watermelon.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    }
+}
 
 /* header 시작 */
+
 header {
-    display: flex;
-    justify-content: space-between;
-    background-color: #00000040;
-    padding: 0 80px;
+    /* background-color: #00000040; */
+    background: url(../image/헤더\ 이미지.jpg);
+    width: 100%;
+    height: 1000px;
 }
 
 .header_text {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    background-color: #00000040;
+    width: 1745px;
+    height: 100px;
+    border-bottom: 1px solid #a0a0a0;
+    font-family: 'MaruBuri';
 }
 
 .header_text > h1 {
     display: flex;
     flex-direction: column;
-    font-size: 26px;
+    font-size: 32px;
     color: #fff;
-    font-family: 'MaruBuri';
 }
 
 .header_text > h1 > span {
     font-size: 12px;
 }
 
-header > button {
+.header_text > button {
     color: #fff;
     border: none;
     background: none;
 }
-
 
 /* header 끝 */
 
@@ -51,14 +59,15 @@ header > button {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    background: url(../image/상단\ 백그라운드\ 이미지.png);
+    width: 100%;
+    height: 800px;
 }
 
-.main_text_1 > figure {
-    background: url(../image/메인\ 이미지.jpg);
-    width: 900px;
-    height: 400px;
-    background-size: cover;
-    border-radius: 0 90px 0 0;
+.main_text_1 > img {
+    width: 960px;
+    height: 540px;
+    border-radius: 0 150px 0 0;
 }
 
 .main_text_1 > div {
@@ -68,7 +77,36 @@ header > button {
 }
 
 .main_text_1 > div > p {
-    font-size: 40px;
+    font-size: 48px;
     font-family: '116watermelon';
+    color: #665C52;
 }
+
+.main_text_1 > div > span {
+    color: #353535;
+    font-size: 14px;
+}
+
+.text_2_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+}
+
+.text_2_top > figure {
+    background: url(../image/메인\ 이미지2.jpg);
+    width: 468px;
+    height: 516px;
+    background-size: cover;
+    border-radius: 50% 50% 0 0;
+    margin-left: 500px;
+}
+
+.text_2_center > button {
+    border: none;
+    background: none;
+}
+
 /* main 끝 */
